@@ -4,9 +4,215 @@
 /* CSS Variables */
 :root {
   --CL-primary-dark: #272a31;
+  --CL-primary-dark-two: #585858;
   --CL-primary-light: #d3d3d3;
+  --CL-primary-light-two: #f3f3f3;
   --CL-primary-orange: #ec5242;
+
+  --CL-neutral-white: #ffffff;
 
   --FF-primary-lato: 'Lato', sans-serif;
   --FF-primary-cocogoose: 'COCOGOOSE', sans-serif;
+}
+
+h1 {
+  font-family: var(--FF-primary-cocogoose);
+}
+
+p {
+  color: var(--CL-primary-dark-two);
+}
+
+.nav-item {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: var(--CL-primary-dark-two);
+}
+
+/* Font Families */
+
+.font-title {
+  font-family: var(--FF-primary-cocogoose);
+}
+
+/* Font Sizes */
+
+.parragraph {
+  font-size: calc(0.9rem + 1vw);
+  font-weight: 400;
+  margin: 0;
+}
+
+.parragraph-xs {
+  font-size: calc(0.6rem + 1vw);
+  font-weight: 600;
+  margin: 0;
+}
+
+.h1 {
+  font-size: calc(1.6rem + 1vw);
+}
+
+/* Lines */
+
+.hr {
+  height: 1.5px;
+  background-color: var(--CL-primary-orange);
+  border: none;
+  border-radius: 1em;
+  max-width: 3em;
+  margin: 1em auto;
+}
+
+/* Colors */
+
+.text-dark {
+  color: var(--CL-primary-dark);
+}
+
+.text-orange {
+  color: var(--CL-primary-orange);
+}
+
+.text-light {
+  color: var(--CL-primary-light);
+}
+
+.text-dark-two {
+  color: var(--CL-primary-dark-two);
+}
+
+/* Hero Section */
+
+.hero-background {
+  background-image: url('../resources/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  background-image: url('../resources/images/cutout.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(236, 83, 66, 0.75);
+  line-height: 1;
+}
+
+.hero-content {
+  background: rgb(243, 243, 243);
+  padding: 6em 0 4em 0;
+}
+
+.hero-card {
+  padding: 1em;
+  margin: 1em 0;
+  border: 4px solid var(--CL-neutral-white);
+  background-color: var(--CL-primary-light-two);
+  max-width: 40rem;
+}
+
+.hero-parragraph {
+  font-size: calc(0.52rem + 1vw);
+  font-weight: 600;
+}
+
+/* Program Section */
+
+.program-background {
+  background-color: #272a31;
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%23f3f3f3' fill-opacity='0.12' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.program-content {
+  background-color: rgb(39, 42, 49, 0.75);
+  padding: 3em 0;
+}
+
+.program-system {
+  margin: 0;
+}
+
+.program-card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(61, 63, 70, 0.48);
+  padding: 1em;
+  gap: 1em;
+}
+
+.program-card > * {
+  margin-block: 0;
+}
+
+.program-icon {
+  max-width: 2.5em;
+}
+
+.program-title {
+  font-size: 1.15rem;
+  color: var(--CL-primary-orange);
+  font-weight: bold;
+  flex: 0.5;
+  text-align: left;
+}
+
+.program-description {
+  text-align: left;
+  font-size: 0.8rem;
+  color: var(--CL-neutral-white);
+  flex: 1;
+}
+
+/* Desktop Version */
+
+@media (min-width: 768px) {
+  .navbar {
+    box-shadow: 0 0 10px rgba(77, 77, 77, 0.15);
+    background-color: var(--CL-neutral-white);
+  }
+
+  .nav-item {
+    margin: 0 2em;
+  }
+
+  .hero-content {
+    padding: 10em 0 10em 0;
+  }
+
+  .parragraph {
+    font-size: 2.25rem;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    max-width: 63%;
+  }
+
+  .hero-parragraph {
+    font-size: 1rem;
+  }
+
+  .program-system {
+    justify-content: center;
+  }
+
+  .program-card {
+    display: grid;
+    place-items: center;
+    background-color: rgba(61, 63, 70, 0.48);
+    padding: 2em;
+  }
+
+  .program-icon {
+    height: 3em;
+  }
+
+  .program-description {
+    text-align: center;
+  }
 }
