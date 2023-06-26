@@ -230,9 +230,10 @@ p {
 
 .featured-card {
   display: grid;
-  grid-template-columns: 6em 1fr;
+  grid-template-columns: 8em 1fr;
   gap: 1em;
   padding: 0 0;
+  max-height: 10em;
 }
 
 .featured-portrait {
