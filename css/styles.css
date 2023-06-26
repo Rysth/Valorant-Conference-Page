@@ -21,6 +21,7 @@ h1 {
 
 p {
   color: var(--CL-primary-dark-two);
+  margin: 0;
 }
 
 .nav-item {
@@ -38,18 +39,6 @@ p {
 }
 
 /* Font Sizes */
-
-.parragraph {
-  font-size: calc(0.9rem + 1vw);
-  font-weight: 400;
-  margin: 0;
-}
-
-.parragraph-xs {
-  font-size: calc(0.6rem + 1vw);
-  font-weight: 600;
-  margin: 0;
-}
 
 .h1 {
   font-size: calc(1.6rem + 1vw);
@@ -92,6 +81,12 @@ p {
   background-repeat: no-repeat;
 }
 
+.hero-content {
+  background: rgb(243, 243, 243, 0.92);
+  padding: 6em 0 4em 0;
+  backdrop-filter: grayscale(100%);
+}
+
 .hero-title {
   background-image: url('../resources/images/cutout.jpg');
   background-size: cover;
@@ -101,11 +96,12 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(236, 83, 66, 0.75);
   line-height: 1;
+  margin: 0;
 }
 
-.hero-content {
-  background: rgb(243, 243, 243);
-  padding: 6em 0 4em 0;
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin: 0.25em 0;
 }
 
 .hero-card {
@@ -117,7 +113,16 @@ p {
 }
 
 .hero-parragraph {
-  font-size: calc(0.52rem + 1vw);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.hero-date {
+  font-size: 1.4rem;
+}
+
+.hero-location {
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -180,21 +185,36 @@ p {
     margin: 0 2em;
   }
 
-  .hero-content {
-    padding: 10em 0 10em 0;
-  }
+  /* Hero Section */
 
-  .parragraph {
-    font-size: 2.25rem;
+  .hero-content {
+    padding: 9.5em 0 9.5em 0;
   }
 
   .hero-title {
-    font-size: 4rem;
+    font-size: 4.5rem;
     max-width: 63%;
+  }
+
+  .hero-subtitle {
+    font-size: 2.35rem;
+  }
+
+  .hero-card {
+    margin: 1rem 0 2rem 0;
   }
 
   .hero-parragraph {
     font-size: 1rem;
+  }
+
+  .hero-date {
+    font-size: 2rem;
+  }
+
+  .hero-location {
+    font-size: 1.35rem;
+    font-weight: 600;
   }
 
   .program-system {
