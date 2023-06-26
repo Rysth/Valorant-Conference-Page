@@ -1,0 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/lato');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+
+/* CSS Variables */
+:root {
+  --CL-primary-dark: #272a31;
+  --CL-primary-light: #d3d3d3;
+  --CL-primary-orange: #ec5242;
+
+  --FF-primary-lato: 'Lato', sans-serif;
+  --FF-primary-cocogoose: 'COCOGOOSE', sans-serif;
+}
