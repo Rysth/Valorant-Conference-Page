@@ -7,7 +7,7 @@
   --CL-primary-dark-two: #585858;
   --CL-primary-light: #d3d3d3;
   --CL-primary-light-two: #f3f3f3;
-  --CL-primary-orange: #ec5242;
+  --CL-primary-orange: #fb462e;
 
   --CL-neutral-white: #ffffff;
 
@@ -22,14 +22,6 @@ h1 {
 p {
   color: var(--CL-primary-dark-two);
   margin: 0;
-}
-
-.nav-item {
-  font-weight: bold;
-}
-
-.nav-link {
-  color: var(--CL-primary-dark-two);
 }
 
 /* Font Families */
@@ -47,13 +39,18 @@ p {
 /* Lines */
 
 .hr {
-  height: 1.5px;
+  height: 1.25px;
   background-color: var(--CL-primary-orange);
   border: none;
-  border-radius: 1em;
   max-width: 3em;
   margin: 1em auto 2em auto;
   opacity: 0.5;
+}
+
+.hr-dark {
+  background-color: var(--CL-primary-dark-two);
+  margin: 0.5em 0 0.5em 0;
+  max-width: 1.25em;
 }
 
 /* Colors */
@@ -84,6 +81,41 @@ p {
   margin: 2.5rem 0 0 0;
 }
 
+.btn-orange:active {
+  background-color: var(--CL-primary-orange);
+}
+
+.btn-orange:hover {
+  background-color: var(--CL-neutral-white);
+  color: var(--CL-primary-dark);
+}
+
+.btn-white {
+  border: 5px solid var(--CL-primary-orange);
+  color: var(--CL-primary-orange);
+  padding: 0.5em 1em;
+  border-radius: 0;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.nav-item {
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  padding: 1em 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.brand-logo {
+  max-width: 8em;
+}
+
 /* Hero Section */
 
 .hero-background {
@@ -102,10 +134,10 @@ p {
   background-image: url('../resources/images/cutout.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(236, 83, 66, 0.75);
+  -webkit-text-fill-color: rgba(236, 83, 66, 0.8);
   line-height: 1;
   margin: 0;
 }
@@ -187,8 +219,51 @@ p {
   flex: 1;
 }
 
-/* Desktop Version */
+/* Featured Section */
+.featured-content {
+  padding: 3em 0;
+}
 
+.featured-system {
+  gap: 2.5em;
+}
+
+.featured-card {
+  display: grid;
+  grid-template-columns: 6em 1fr;
+  gap: 1em;
+  padding: 0 0;
+}
+
+.featured-portrait {
+  height: 100%;
+  object-fit: cover;
+  background-color: var(--CL-primary-dark);
+}
+
+.featured-subcontent {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.featured-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.25em;
+}
+
+.featured-subtitle {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--CL-primary-orange);
+}
+
+.featured-description {
+  font-size: 0.65rem;
+}
+
+/* Desktop Version */
 @media (min-width: 768px) {
   /* Lines */
   .hr {
@@ -209,13 +284,17 @@ p {
     font-weight: 300;
   }
 
-  .btn-orange:hover {
-    background-color: var(--CL-neutral-white);
-    color: var(--CL-primary-dark);
+  .btn-orange-content::after {
+    content: 'SEE THE WHOLE GAME';
   }
 
-  .btn-orange::after {
-    content: 'SEE THE WHOLE GAME';
+  .btn-white {
+    margin: unset;
+  }
+
+  .btn-white:hover {
+    color: var(--CL-neutral-white);
+    background-color: var(--CL-primary-orange);
   }
 
   /* Navigation Bar */
@@ -225,8 +304,22 @@ p {
     background-color: var(--CL-neutral-white);
   }
 
+  .navbar-nav {
+    flex: 1;
+    justify-content: end;
+  }
+
+  .navbar-collapse {
+    padding: 0;
+  }
+
   .nav-item {
     margin: 0 2em;
+  }
+
+  .nav-link:hover {
+    color: #ec5242;
+    text-decoration: underline;
   }
 
   /* Hero Section */
@@ -296,5 +389,29 @@ p {
   .game-description {
     font-size: 1rem;
     text-align: center;
+  }
+
+  /* Featured Section */
+  .featured-system {
+    justify-content: center;
+  }
+
+  .featured-card {
+    display: grid;
+    grid-template-columns: 10em 1fr;
+    gap: 1em;
+    padding: 0 0;
+  }
+
+  .featured-title {
+    font-size: 1.5rem;
+  }
+
+  .featured-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .featured-description {
+    font-size: 0.85rem;
   }
 }
