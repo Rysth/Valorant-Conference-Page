@@ -4,9 +4,96 @@
 /* CSS Variables */
 :root {
   --CL-primary-dark: #272a31;
+  --CL-primary-dark-two: #585858;
   --CL-primary-light: #d3d3d3;
+  --CL-primary-light-two: rgb(243, 243, 243);
   --CL-primary-orange: #ec5242;
+
+  --CL-neutral-white: #ffffff;
 
   --FF-primary-lato: 'Lato', sans-serif;
   --FF-primary-cocogoose: 'COCOGOOSE', sans-serif;
 }
+
+h1,
+h2,
+h3 {
+  font-family: var(--FF-primary-cocogoose);
+}
+
+p {
+  color: var(--CL-primary-dark-two);
+}
+
+/* Font Sizes */
+
+.parragraph {
+  font-size: calc(0.9rem + 1vw);
+  font-weight: 400;
+  margin: 0;
+}
+
+.parragraph-xs {
+  font-size: calc(0.6rem + 1vw);
+  font-weight: 600;
+  margin: 0;
+}
+
+.h1 {
+  font-size: calc(1.6rem + 1vw);
+}
+
+/* Colors */
+
+.text-dark {
+  color: var(--CL-primary-dark);
+}
+
+.text-orange {
+  color: var(--CL-primary-orange);
+}
+
+.text-light {
+  color: var(--CL-primary-light);
+}
+
+.text-dark-two {
+  color: var(--CL-primary-dark-two);
+}
+
+/* Hero Card */
+
+.hero-card {
+  padding: 1em;
+  margin: 1em 0;
+  border: 3px solid var(--CL-neutral-white);
+  background-color: var(--CL-primary-light-two);
+}
+
+.hero-parragraph {
+  font-size: calc(0.52rem + 1vw);
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-background {
+  background-image: url('../resources/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  background-image: url('../resources/images/cutout.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content {
+  background: rgb(243, 243, 243, 0.95);
+  padding: 7em 0 6em 0;
+}
+
+/* Program Section */
