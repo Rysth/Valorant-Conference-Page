@@ -7,7 +7,7 @@
   --CL-primary-dark-two: #585858;
   --CL-primary-light: #d3d3d3;
   --CL-primary-light-two: #f3f3f3;
-  --CL-primary-orange: #ec5242;
+  --CL-primary-orange: #fb462e;
 
   --CL-neutral-white: #ffffff;
 
@@ -22,14 +22,6 @@ h1 {
 p {
   color: var(--CL-primary-dark-two);
   margin: 0;
-}
-
-.nav-item {
-  font-weight: bold;
-}
-
-.nav-link {
-  color: var(--CL-primary-dark-two);
 }
 
 /* Font Families */
@@ -84,6 +76,32 @@ p {
   margin: 2.5rem 0 0 0;
 }
 
+.btn-white {
+  border: 5px solid var(--CL-primary-orange);
+  color: var(--CL-primary-orange);
+  padding: 0.5em 1em;
+  border-radius: 0;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+
+.nav-item {
+  font-weight: bold;
+}
+
+.navbar-collapse {
+  padding: 1em 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.brand-logo {
+  max-width: 8em;
+}
+
 /* Hero Section */
 
 .hero-background {
@@ -102,10 +120,10 @@ p {
   background-image: url('../resources/images/cutout.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(236, 83, 66, 0.75);
+  -webkit-text-fill-color: rgba(236, 83, 66, 0.8);
   line-height: 1;
   margin: 0;
 }
@@ -188,7 +206,6 @@ p {
 }
 
 /* Desktop Version */
-
 @media (min-width: 768px) {
   /* Lines */
   .hr {
@@ -214,8 +231,17 @@ p {
     color: var(--CL-primary-dark);
   }
 
-  .btn-orange::after {
+  .btn-orange-content::after {
     content: 'SEE THE WHOLE GAME';
+  }
+
+  .btn-white {
+    margin: unset;
+  }
+
+  .btn-white:hover {
+    color: var(--CL-neutral-white);
+    background-color: var(--CL-primary-orange);
   }
 
   /* Navigation Bar */
@@ -225,8 +251,22 @@ p {
     background-color: var(--CL-neutral-white);
   }
 
+  .navbar-nav {
+    flex: 1;
+    justify-content: end;
+  }
+
+  .navbar-collapse {
+    padding: 0;
+  }
+
   .nav-item {
     margin: 0 2em;
+  }
+
+  .nav-link:hover {
+    color: #ec5242;
+    text-decoration: underline;
   }
 
   /* Hero Section */
