@@ -9,7 +9,7 @@ const featuredArray = [
   {
     id: 0,
     class: 'featured-visible',
-    image: '../resources/profiles/cypher-1.jpg',
+    image: './resources/profiles/cypher-1.jpg',
     title: 'AcreTheDog',
     subtitle: 'The Watchful Sentinel',
     description:
@@ -18,7 +18,7 @@ const featuredArray = [
   {
     id: 1,
     class: 'featured-visible',
-    image: '../resources/profiles/cypher-2.jpg',
+    image: './resources/profiles/cypher-2.jpg',
     title: 'Dinghy',
     subtitle: 'The Silent Observer',
     description:
@@ -27,7 +27,7 @@ const featuredArray = [
   {
     id: 2,
     class: 'featured-hidden',
-    image: '../resources/profiles/cypher-3.jpg',
+    image: './resources/profiles/cypher-3.jpg',
     title: 'Spawns',
     subtitle: 'The Mind Manipulator',
     description:
@@ -36,7 +36,7 @@ const featuredArray = [
   {
     id: 3,
     class: 'featured-hidden',
-    image: '../resources/profiles/cypher-4.jpg',
+    image: './resources/profiles/cypher-4.jpg',
     title: 'SoaR Maxie',
     subtitle: 'The Architect of Shadows',
     description:
@@ -45,7 +45,7 @@ const featuredArray = [
   {
     id: 4,
     class: 'featured-hidden',
-    image: '../resources/profiles/cypher-5.jpg',
+    image: './resources/profiles/cypher-5.jpg',
     title: 'Link123',
     subtitle: 'The Sentinel Strategist',
     description:
@@ -54,7 +54,7 @@ const featuredArray = [
   {
     id: 5,
     class: 'featured-hidden',
-    image: '../resources/profiles/cypher-6.jpg',
+    image: './resources/profiles/cypher-6.jpg',
     title: 'Rysth',
     subtitle: 'The Phantom Observer',
     description:
