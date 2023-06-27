@@ -8,6 +8,7 @@
   --CL-primary-light: #d3d3d3;
   --CL-primary-light-two: #f3f3f3;
   --CL-primary-orange: rgb(251, 70, 46);
+  --CL-primary-orange: #fb462e;
 
   --CL-neutral-white: #ffffff;
 
@@ -316,6 +317,17 @@ p {
     font-weight: 300;
   }
 
+  .btn-orange-content::after {
+    content: 'SEE THE WHOLE GAME';
+  }
+
+  .btn-white {
+    margin: unset;
+  }
+
+  .btn-white:hover {
+    color: var(--CL-neutral-white);
+    background-color: var(--CL-primary-orange);
   .btn-orange-content::after {
     content: 'SEE THE WHOLE GAME';
   }
