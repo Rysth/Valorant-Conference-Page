@@ -4,7 +4,8 @@
 /* CSS Variables */
 :root {
   --CL-primary-dark: #272a31;
-  --CL-primary-dark-two: #585858;
+  --CL-primary-dark-two: #626262;
+  --CL-primary-dark-three: #353535;
   --CL-primary-light: #d3d3d3;
   --CL-primary-light-two: #f3f3f3;
   --CL-primary-orange: rgb(251, 70, 46);
@@ -103,7 +104,6 @@ p {
   border: 1px solid var(--CL-primary-light);
   background-color: var(--CL-neutral-white);
   border-radius: 2px;
-  margin-top: 3em;
   text-transform: uppercase;
   font-size: 12px;
   padding: 0.75em 0;
@@ -120,6 +120,10 @@ p {
   font-weight: bold;
 }
 
+.navbar {
+  box-shadow: 0 0 10px rgba(77, 77, 77, 0.15);
+}
+
 .navbar-collapse {
   padding: 1em 0;
   display: grid;
@@ -130,6 +134,11 @@ p {
 
 .brand-logo {
   max-width: 8em;
+}
+
+/* Background */
+.bg-dark-three {
+  background-color: var(--CL-primary-dark-three);
 }
 
 /* Hero Section */
@@ -249,13 +258,18 @@ p {
   grid-template-columns: 8em 1fr;
   gap: 1em;
   padding: 0 0;
-  max-height: 10em;
+  max-height: 12em;
 }
 
 .featured-portrait {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   background-color: var(--CL-primary-dark);
+}
+
+.featured-image {
+  object-fit: cover;
 }
 
 .featured-subcontent {
@@ -296,6 +310,23 @@ p {
   display: grid;
 }
 
+/* Sponsor Section */
+.section-sponsor {
+  padding: 3em 0;
+}
+
+.sponsor-system {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.sponsor-image {
+  width: 6em;
+}
+
 /* Desktop Version */
 @media (min-width: 768px) {
   /* Lines */
@@ -328,6 +359,8 @@ p {
   .btn-white:hover {
     color: var(--CL-neutral-white);
     background-color: var(--CL-primary-orange);
+  }
+
   .btn-orange-content::after {
     content: 'SEE THE WHOLE GAME';
   }
@@ -344,7 +377,6 @@ p {
   /* Navigation Bar */
 
   .navbar {
-    box-shadow: 0 0 10px rgba(77, 77, 77, 0.15);
     background-color: var(--CL-neutral-white);
   }
 
@@ -438,6 +470,7 @@ p {
   /* Featured Section */
   .featured-system {
     justify-content: center;
+    gap: 3em;
   }
 
   .featured-card {
@@ -461,5 +494,14 @@ p {
 
   .featured-hidden {
     display: grid;
+  }
+
+  /* Sponsor Section */
+  .sponsor-system {
+    gap: 3em;
+  }
+
+  .sponsor-image {
+    width: 8em;
   }
 }

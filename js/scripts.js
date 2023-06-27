@@ -58,7 +58,7 @@ const featuredArray = [
     title: 'Rysth',
     subtitle: 'The Phantom Observer',
     description:
-      'Embrace the role of the ultimate sentinel, wielding the power of information and striking fear into the hearts of your enemies as a seasoned Cypher Main, controlling the battlefield with ruthless precision and unwavering vigilance.',
+      'Embrace the role of the ultimate sentinel, wielding the power of information and striking fear into the hearts of your enemies as a seasoned Cypher Main, controlling the battlefield.',
   },
 ];
 
@@ -66,7 +66,7 @@ function addFeaturedCards() {
   featuredArray.forEach((element) => {
     const elementClass = element.class;
     const article = document.createElement('article');
-    article.classList.add('featured-card', 'col-12', 'col-lg-5', elementClass);
+    article.classList.add('featured-card', 'col-12', 'col-xl-5', elementClass);
     article.innerHTML = `
       <div class="featured-image" id="featured-${element.id}">
         <img
@@ -106,3 +106,11 @@ window.onload = () => {
   addFeaturedCards();
   toggleFeaturedCards();
 };
+
+const navigationLinks = document.querySelectorAll('.nav-item');
+const menuToggle = document.getElementById('navbarText');
+navigationLinks.forEach((element) => {
+  element.addEventListener('click', () => {
+    menuToggle.classList.remove('show');
+  });
+});
