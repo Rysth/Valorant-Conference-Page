@@ -6,6 +6,7 @@
   --CL-primary-dark: #272a31;
   --CL-primary-dark-two: #626262;
   --CL-primary-dark-three: #353535;
+  --CL-primary-dark-fourth: #2c2c2c;
   --CL-primary-light: #d3d3d3;
   --CL-primary-light-two: #f3f3f3;
   --CL-primary-orange: #fb462e;
@@ -111,6 +112,16 @@ p {
   color: var(--CL-neutral-white);
 }
 
+/* Background */
+
+.bg-dark-three {
+  background-color: var(--CL-primary-dark-three);
+}
+
+.bg-dark-fourth {
+  background-color: var(--CL-primary-dark-fourth);
+}
+
 /* Navigation Bar */
 
 .nav-item {
@@ -131,11 +142,6 @@ p {
 
 .brand-logo {
   max-width: 8em;
-}
-
-/* Background */
-.bg-dark-three {
-  background-color: var(--CL-primary-dark-three);
 }
 
 /* Hero Section */
