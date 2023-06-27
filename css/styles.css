@@ -7,7 +7,7 @@
   --CL-primary-dark-two: #585858;
   --CL-primary-light: #d3d3d3;
   --CL-primary-light-two: #f3f3f3;
-  --CL-primary-orange: #fb462e;
+  --CL-primary-orange: rgb(251, 70, 46);
 
   --CL-neutral-white: #ffffff;
 
@@ -96,6 +96,21 @@ p {
   padding: 0.5em 1em;
   border-radius: 0;
   margin: 0 auto;
+}
+
+.btn-light {
+  border: 1px solid var(--CL-primary-light);
+  background-color: var(--CL-neutral-white);
+  border-radius: 2px;
+  margin-top: 3em;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0.75em 0;
+}
+
+.btn-light:hover {
+  background-color: var(--CL-primary-dark);
+  color: var(--CL-neutral-white);
 }
 
 /* Navigation Bar */
@@ -264,6 +279,22 @@ p {
   font-size: 0.65rem;
 }
 
+.featured-action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+/* Hidden/Visible */
+.featured-hidden {
+  display: none;
+}
+
+.featured-visible {
+  display: grid;
+}
+
 /* Desktop Version */
 @media (min-width: 768px) {
   /* Lines */
@@ -414,5 +445,9 @@ p {
 
   .featured-description {
     font-size: 0.85rem;
+  }
+
+  .featured-hidden {
+    display: grid;
   }
 }

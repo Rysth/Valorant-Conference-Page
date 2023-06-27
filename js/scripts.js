@@ -8,6 +8,7 @@ const featuredSystem = document.querySelector('#featured-system');
 const featuredArray = [
   {
     id: 0,
+    class: 'featured-visible',
     image: '../resources/profiles/cypher-1.jpg',
     title: 'AcreTheDog',
     subtitle: 'The Watchful Sentinel',
@@ -16,6 +17,7 @@ const featuredArray = [
   },
   {
     id: 1,
+    class: 'featured-visible',
     image: '../resources/profiles/cypher-2.jpg',
     title: 'Dinghy',
     subtitle: 'The Silent Observer',
@@ -24,6 +26,7 @@ const featuredArray = [
   },
   {
     id: 2,
+    class: 'featured-hidden',
     image: '../resources/profiles/cypher-3.jpg',
     title: 'Spawns',
     subtitle: 'The Mind Manipulator',
@@ -32,6 +35,7 @@ const featuredArray = [
   },
   {
     id: 3,
+    class: 'featured-hidden',
     image: '../resources/profiles/cypher-4.jpg',
     title: 'SoaR Maxie',
     subtitle: 'The Architect of Shadows',
@@ -40,6 +44,7 @@ const featuredArray = [
   },
   {
     id: 4,
+    class: 'featured-hidden',
     image: '../resources/profiles/cypher-5.jpg',
     title: 'Link123',
     subtitle: 'The Sentinel Strategist',
@@ -48,6 +53,7 @@ const featuredArray = [
   },
   {
     id: 5,
+    class: 'featured-hidden',
     image: '../resources/profiles/cypher-6.jpg',
     title: 'Rysth',
     subtitle: 'The Phantom Observer',
@@ -58,8 +64,9 @@ const featuredArray = [
 
 function addFeaturedCards() {
   featuredArray.forEach((element) => {
+    const elementClass = element.class;
     const article = document.createElement('article');
-    article.classList.add('featured-card', 'col-12', 'col-lg-5');
+    article.classList.add('featured-card', 'col-12', 'col-lg-5', elementClass);
     article.innerHTML = `
       <div class="featured-image" id="featured-${element.id}">
         <img
@@ -81,6 +88,21 @@ function addFeaturedCards() {
   });
 }
 
+function toggleFeaturedCards() {
+  const featuredButton = document.querySelector('#featured-more');
+  const featuredCards = Array.from(document.querySelectorAll('.featured-card'));
+  const featuredClass = 'featured-hidden';
+  featuredButton.addEventListener('click', () => {
+    featuredCards.forEach((element) => {
+      const validator = element.classList.contains(featuredClass);
+      if (validator) {
+        element.classList.toggle('featured-visible');
+      }
+    });
+  });
+}
+
 window.onload = () => {
   addFeaturedCards();
+  toggleFeaturedCards();
 };
