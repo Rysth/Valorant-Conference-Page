@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/framework.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg py-2 fixed-top bg-white">
       <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand d-none d-lg-block" href="index.html">
           <img
@@ -44,22 +44,22 @@
             alt="Hamburguer button icon"
           />
         </button>
-        <div class="collapse navbar-collapse bg-white" id="navbarText">
+        <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav align-items-center">
             <li class="nav-item">
-              <a class="nav-link text-orange" href="index.html">About</a>
+              <a class="nav-link text-orange" href="index.html"> About </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#game">Game</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Join</a>
+              <a class="nav-link" href="#featured">Featured</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sponsor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="#sponsor">Sponsor</a>
             </li>
             <li class="nav-item">
               <a class="btn btn-white" href="#">Cypher Game</a>
@@ -183,7 +183,10 @@
             <div class="container">
               <h2 class="fs-3 fw-bold">Featured Gamers</h2>
               <hr class="hr" />
-              <div class="featured-system row m-0" id="featured-system"></div>
+              <div
+                class="featured-system row m-0 py-5"
+                id="featured-system"
+              ></div>
               <div class="featured-actions">
                 <button
                   class="featured-action-button btn btn-light w-100 d-md-none"
@@ -192,6 +195,43 @@
                   More
                   <i class="fa-solid fa-arrow-down" style="color: #fb462e"></i>
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section-sponsor bg-dark-three" id="sponsor">
+        <div class="sponsor-background">
+          <div class="sponsor-content text-center">
+            <div class="container">
+              <h2 class="fs-3 text-dark-two">Partner</h2>
+              <hr class="hr" />
+              <div class="sponsor-system">
+                <img
+                  class="sponsor-image"
+                  src="./resources/icons/sponsor/sponsor-1.svg"
+                  alt="Sponsor Mozilla"
+                />
+                <img
+                  class="sponsor-image"
+                  src="./resources/icons/sponsor/sponsor-2.svg"
+                  alt="Sponsor Google"
+                />
+                <img
+                  class="sponsor-image"
+                  src="./resources/icons/sponsor/sponsor-3.svg"
+                  alt="Sponsor NAVER"
+                />
+                <img
+                  class="sponsor-image"
+                  src="./resources/icons/sponsor/sponsor-4.svg"
+                  alt="Sponsor Daumkakao"
+                />
+                <img
+                  class="sponsor-image"
+                  src="./resources/icons/sponsor/sponsor-5.svg"
+                  alt="Sponsor Airbnb"
+                />
               </div>
             </div>
           </div>
