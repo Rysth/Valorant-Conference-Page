@@ -8,11 +8,8 @@
   --CL-primary-dark-three: #353535;
   --CL-primary-light: #d3d3d3;
   --CL-primary-light-two: #f3f3f3;
-  --CL-primary-orange: rgb(251, 70, 46);
   --CL-primary-orange: #fb462e;
-
-  --CL-neutral-white: #ffffff;
-
+  --CL-neutral-white: #fff;
   --FF-primary-lato: 'Lato', sans-serif;
   --FF-primary-cocogoose: 'COCOGOOSE', sans-serif;
 }
@@ -164,9 +161,8 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(236, 83, 66, 0.8);
+  -webkit-text-fill-color: rgba(236, 83, 66, 0.9);
   line-height: 1;
   margin: 0;
 }
@@ -316,7 +312,7 @@ p {
 
 /* Sponsor Section */
 .section-sponsor {
-  padding: 3em 0;
+  padding: 4em 0;
 }
 
 .sponsor-system {
@@ -329,6 +325,19 @@ p {
 
 .sponsor-image {
   width: 6em;
+}
+
+/* Footer Section */
+.section-footer {
+  padding: 3em 0;
+}
+
+.footer-system {
+  max-width: 50rem;
+}
+
+.footer-subystem {
+  gap: 1.5em;
 }
 
 /* Desktop Version */
@@ -350,19 +359,6 @@ p {
     text-decoration: underline;
     font-size: 1.2rem;
     font-weight: 300;
-  }
-
-  .btn-orange-content::after {
-    content: 'SEE THE WHOLE GAME';
-  }
-
-  .btn-white {
-    margin: unset;
-  }
-
-  .btn-white:hover {
-    color: var(--CL-neutral-white);
-    background-color: var(--CL-primary-orange);
   }
 
   .btn-orange-content::after {
