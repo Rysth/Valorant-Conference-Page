@@ -1,7 +1,7 @@
-/* 
+/*
 ==========FEATURES SECTION==========
 The section "Featured speakers" should be created dynamically in JavaScript.
-You should use a JavaScript variable with the data about the speakers and use 
+You should use a JavaScript variable with the data about the speakers and use
 it when the page loads to create the HTML for this section dynamically.
 */
 const featuredSystem = document.querySelector('#featured-system');
@@ -88,16 +88,28 @@ function addFeaturedCards() {
   });
 }
 
+function toggleMoreContent(button) {
+  if (button.innerText === 'MORE') {
+    button.innerHTML = `
+          Less <i class="fa-solid fa-arrow-up text-orange" ></i>
+        `;
+  } else {
+    button.innerHTML = `
+          More <i class="fa-solid fa-arrow-down text-orange"></i>
+        `;
+  }
+}
+
 function toggleFeaturedCards() {
   const featuredButton = document.querySelector('#featured-more');
   const featuredCards = Array.from(document.querySelectorAll('.featured-card'));
   const featuredClass = 'featured-hidden';
+
   featuredButton.addEventListener('click', () => {
+    toggleMoreContent(featuredButton);
     featuredCards.forEach((element) => {
       const validator = element.classList.contains(featuredClass);
-      if (validator) {
-        element.classList.toggle('featured-visible');
-      }
+      if (validator) element.classList.toggle('featured-visible');
     });
   });
 }
