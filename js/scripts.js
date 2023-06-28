@@ -10,5 +10,7 @@ buttonToggle.addEventListener('click', () => {
 navigationLinks.forEach((element) => {
   element.addEventListener('click', () => {
     menuToggle.classList.remove('show');
+    if (buttonIcon.classList.contains('fa-xmark'))
+      buttonIcon.classList.remove('fa-xmark');
   });
 });
