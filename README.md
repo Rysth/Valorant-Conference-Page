@@ -64,7 +64,7 @@ Also, we as the company wanted to offer the best technologies to help you with y
 <div align="center">
   <h3><b>Design Preview</b></h3>
   <br/>
-  <img src="./resources/images/hero.jpg.png" alt="logo" style="object-fit:cover;"/>
+  <img src="./resources/images/hero.jpg" alt="logo" style="object-fit:cover;"/>
 </div>
 
 - [Live Demo Link](https://rysth.github.io/Conference-Page/)
@@ -125,14 +125,14 @@ Feel free to check the [issues page](../../issues/).
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project feel free to watch it and take some features that will enhance your project
-aswell.
+as well.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to the Microverse Team for reviewing my code and make me a better
-proffessional.
+I would like to thank the Microverse Team for reviewing my code and making me a better
+professional.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
