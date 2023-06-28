@@ -64,8 +64,10 @@ Also, we as the company wanted to offer the best technologies to help you with y
 <div align="center">
   <h3><b>Design Preview</b></h3>
   <br/>
-  <img src="./resources/images/hero.jpg" alt="logo" style="object-fit:cover;"/>
+  <img src="./resources/images/preview.png" alt="Design Preview Screenshot" style="object-fit:cover;"/>
 </div>
+
+### Take a Look
 
 - [Live Demo Link](https://rysth.github.io/Conference-Page/)
 
