@@ -64,7 +64,8 @@ Also, we as the company wanted to offer the best technologies to help you with y
 
 - **Implement a Database**
 - **Implement a CSS Preprocessor.**
-- **Implement a Coach Form Reservation**
+- **Implement a Contact Form**
+- **Implement a Video Preview**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
