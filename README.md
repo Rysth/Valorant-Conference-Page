@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Future Features](#future-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -56,6 +57,14 @@ Also, we as the company wanted to offer the best technologies to help you with y
 - **Good Practices within each File.**
 - **Excellent Content displayed.**
 - **Behance Design Guideline.**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Future Features <a name="key-features"></a>
+
+- **Implement a Database**
+- **Implement a CSS Preprocessor.**
+- **Implement a Coach Form Reservation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
