@@ -61,6 +61,12 @@ Also, we as the company wanted to offer the best technologies to help you with y
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+<div align="center">
+  <h3><b>Design Preview</b></h3>
+  <br/>
+  <img src="./resources/images/hero.jpg.png" alt="logo" style="object-fit:cover;"/>
+</div>
+
 - [Live Demo Link](https://rysth.github.io/Conference-Page/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
