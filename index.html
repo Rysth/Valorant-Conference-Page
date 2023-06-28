@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valorant - Conference Page - Rysth</title>
     <link
+      rel="shortcut icon"
+      href="resources/icons/valorant/valorant-light.svg"
+      type="image/x-icon"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
@@ -47,10 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav align-items-center">
             <li class="nav-item">
-              <a class="nav-link text-orange" href="index.html"> About </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link text-orange" href="about.html"> About </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#game">Game</a>
@@ -62,7 +64,7 @@
               <a class="nav-link" href="#sponsor">Sponsor</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-white" href="#">Cypher Game</a>
+              <a class="btn btn-white" href="index.html">Cypher Game</a>
             </li>
           </ul>
         </div>
@@ -72,7 +74,7 @@
     <main>
       <div class="section section-hero">
         <div class="hero-background">
-          <div class="hero-content h-100">
+          <div class="section-content hero-content h-100">
             <article
               class="container h-100 d-flex flex-column justify-content-center"
             >
@@ -83,7 +85,7 @@
                 </h1>
               </header>
               <div class="hero-card">
-                <p class="hero-parragraph">
+                <p class="parragraph">
                   A tactical genius adept at gathering crucial information.
                   Armed with tripwires, spy cameras, and a neural theft ability,
                   Cypher is the team's eyes and ears.
@@ -101,7 +103,7 @@
       </div>
       <div class="section section-program" id="game">
         <div class="game-background">
-          <div class="game-content text-center">
+          <div class="section-content game-content text-center">
             <div class="container">
               <h2 class="fs-3 text-light fw-bold">Main Game</h2>
               <hr class="hr" />
@@ -179,7 +181,7 @@
       </div>
       <div class="section section-featured" id="featured">
         <div class="featured-background">
-          <div class="featured-content text-center">
+          <div class="section-content featured-content text-center">
             <div class="container">
               <h2 class="fs-3 fw-bold">Featured Gamers</h2>
               <hr class="hr" />
@@ -189,11 +191,12 @@
               ></div>
               <div class="featured-actions">
                 <button
+                  type="button"
                   class="featured-action-button btn btn-light w-100 d-md-none"
                   id="featured-more"
                 >
                   More
-                  <i class="fa-solid fa-arrow-down" style="color: #fb462e"></i>
+                  <i class="fa-solid fa-arrow-down text-orange"></i>
                 </button>
               </div>
             </div>
@@ -202,7 +205,7 @@
       </div>
       <div class="section section-sponsor bg-dark-three" id="sponsor">
         <div class="sponsor-background">
-          <div class="sponsor-content text-center">
+          <div class="section-content sponsor-content text-center">
             <div class="container">
               <h2 class="fs-3 text-dark-two">Partner</h2>
               <hr class="hr" />
@@ -241,7 +244,7 @@
     <footer>
       <div class="section section-footer">
         <div class="footer-background">
-          <div class="footer-content">
+          <div class="section-content footer-content">
             <div class="container d-flex justify-content-center gap-3 gap-xl-5">
               <img
                 class="brand-logo"
@@ -263,6 +266,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/cards.js"></script>
     <script src="js/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
