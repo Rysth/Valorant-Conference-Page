@@ -79,7 +79,7 @@ Also, we as the company wanted to offer the best technologies to help you with y
 
 ### Take a Look
 
-- [Live Demo Link](https://rysth.github.io/Conference-Page/)
+- [Live Demo Link](https://rysth.github.io/Valorant-Conference-Page/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
