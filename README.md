@@ -146,6 +146,9 @@ as well.
 I would like to thank the Microverse Team for reviewing my code and making me a better
 professional.
 
+Also, I'm grateful to [Cindy Shin in Behance](https://www.behance.net/adagio07) to share with us her design.
+Thank you so much!
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
