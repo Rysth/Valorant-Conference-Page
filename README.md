@@ -27,13 +27,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio Project <a name="about-project"></a>
+# 📖 Valorant Cyphers Conference Page <a name="about-project"></a>
 
-**Valorant Conference Page** was built keeping in mind the best Cyphers Players in the world. It brings an opportunity to learn about the Character, Main Features, Game Mechanics, and Playstyles from top-tier people.
-
-Here you will learn more about our Conference which now has a lovely community around the world, especially, within Guayaquil-Ecuador and the City of Casablanca-Morocco.
-
-Also, we as the company wanted to offer the best technologies to help you with your own learning process while seeing an incredible and good-looking website that can guide you to become a professional Cypher Valorant player.
+**Valorant Cyphers Conference Page** Discover top Cyphers Players, their strategies, and join our vibrant global community. Elevate your Valorant skills with our innovative website built using HTML, CSS, and JS.
 
 ## 🛠 Built With <a name="built-with"></a>
 
