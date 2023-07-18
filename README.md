@@ -38,6 +38,7 @@
 <details>
   <summary>Client</summary>
   <ul>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
     <li><a href="https://www.w3schools.com/html/">HTML</a></li>
     <li><a href="https://www.w3schools.com/css/">CSS</a></li>
     <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
@@ -88,8 +89,8 @@ To get a local copy up and running, follow these steps.
 Clone this repository to your desired folder:
 
 ```
-git clone https://github.com/Rysth/Portfolio-Project.git
-cd Conference-Page
+git clone https://github.com/Rysth/Valorant-Conference-Page.git
+cd Valorant-Conference-Page
 code . (To open VS Code Editor)
 ```
 
