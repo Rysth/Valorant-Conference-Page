@@ -29,7 +29,7 @@
 
 # 📖 Valorant Cyphers Conference Page <a name="about-project"></a>
 
-**Valorant Cyphers Conference Page** Discover top Cyphers Players, their strategies, and join our vibrant global community. Build with HTML, CSS, and JavaScript.
+**Valorant Cyphers Conference Page** Discover top Cyphers Players, their strategies, and join our vibrant global community. Built with HTML, CSS, and JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
